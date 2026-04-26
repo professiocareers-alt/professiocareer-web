@@ -1431,7 +1431,7 @@ footer { background: #ffffff; color: var(--text-soft); border-top: 1px solid rgb
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:0.75rem">
           <div><label style="display:block;font-size:0.7rem;color:rgba(255,255,255,0.5);margin-bottom:0.25rem">Resume Optimization</label><input id="ce_price_rr" type="number" placeholder="" style="width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:7px;padding:0.5rem 0.75rem;color:#fff;font-family:'Outfit',sans-serif;font-size:0.82rem"></div>
           <div><label style="display:block;font-size:0.7rem;color:rgba(255,255,255,0.5);margin-bottom:0.25rem">LinkedIn Optimization</label><input id="ce_price_li" type="number" placeholder="" style="width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:7px;padding:0.5rem 0.75rem;color:#fff;font-family:'Outfit',sans-serif;font-size:0.82rem"></div>
-          <div><label style="display:block;font-size:0.7rem;color:rgba(255,255,255,0.5);margin-bottom:0.25rem">Job Applications</label><input id="ce_price_ja" type="number" placeholder="" style="width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:7px;padding:0.5rem 0.75rem;color:#fff;font-family:'Outfit',sans-serif;font-size:0.82rem"></div>
+          <!-- <div><label style="display:block;font-size:0.7rem;color:rgba(255,255,255,0.5);margin-bottom:0.25rem">Job Applications</label><input id="ce_price_ja" type="number" placeholder="" style="width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:7px;padding:0.5rem 0.75rem;color:#fff;font-family:'Outfit',sans-serif;font-size:0.82rem"></div> -->
           <div><label style="display:block;font-size:0.7rem;color:rgba(255,255,255,0.5);margin-bottom:0.25rem">Mock Interviews</label><input id="ce_price_mi" type="number" placeholder="" style="width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:7px;padding:0.5rem 0.75rem;color:#fff;font-family:'Outfit',sans-serif;font-size:0.82rem"></div>
           <div><label style="display:block;font-size:0.7rem;color:rgba(255,255,255,0.5);margin-bottom:0.25rem">Career Counselling</label><input id="ce_price_cc" type="number" placeholder="" style="width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:7px;padding:0.5rem 0.75rem;color:#fff;font-family:'Outfit',sans-serif;font-size:0.82rem"></div>
         </div>
@@ -2131,8 +2131,10 @@ footer { background: #ffffff; color: var(--text-soft); border-top: 1px solid rgb
         <div class="form-group"><label>Phone</label><input type="tel" id="fPH" placeholder="+91 9XXXX-XXXX7"></div>
         <div class="form-group"><label>Service Interested In *</label>
           <select id="fSV"><option value="" disabled selected>Select a service</option>
-            <option>Resume Review </option><option>LinkedIn Optimization </option>
-            <option>Job Applications </option><option>Mock Interviews</option>
+            <option>Resume Review </option>
+            <option>LinkedIn Optimization </option>
+            <!-- <option>Job Applications </option> -->
+            <option>Mock Interviews</option>
             <option>Career Counselling </option>
 
           </select>
@@ -2167,7 +2169,7 @@ footer { background: #ffffff; color: var(--text-soft); border-top: 1px solid rgb
         <li><a href="#services">LinkedIn Optimization</a></li>
         <li><a href="#services">Mock Interviews</a></li>
         <li><a href="#services">Career Counselling</a></li>
-        <li><a href="#services">Job Applications</a></li>
+        <!-- <li><a href="#services">Job Applications</a></li> -->
       </ul>
     </div>
     <div class="footer-nav-group">
@@ -2329,23 +2331,23 @@ const servicesData = [
     `
   },
 
-  {
-    icon: "📝",
-    title: "Job Applications",
-    shortDesc: "Strategic job application support including tailored cover letters and job tracking.",
-    details: `
-<b>Job Applications</b><br><br>
+//   {
+//     icon: "📝",
+//     title: "Job Applications",
+//     shortDesc: "Strategic job application support including tailored cover letters and job tracking.",
+//     details: `
+// <b>Job Applications</b><br><br>
 
-Strategic support for applying to jobs effectively.<br><br>
+// Strategic support for applying to jobs effectively.<br><br>
 
-• Tailored cover letters for each application<br>
-• Job matching based on your profile<br>
-• Application tracking system setup<br>
-• Guidance on improving response rates<br><br>
+// • Tailored cover letters for each application<br>
+// • Job matching based on your profile<br>
+// • Application tracking system setup<br>
+// • Guidance on improving response rates<br><br>
 
-<b>Outcome:</b> More relevant applications and higher chances of interview callbacks
-    `
-  }
+// <b>Outcome:</b> More relevant applications and higher chances of interview callbacks
+//     `
+//   }
 ];
 
 
@@ -2395,7 +2397,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const SVCS=[
   {id:'rr',name:'Optimization',price:1499},
   {id:'li',name:'LinkedIn Optimization',price:1999},
-  {id:'ja',name:'Job Applications Support',price:2499},
+  // {id:'ja',name:'Job Applications Support',price:2499},
   {id:'mi',name:'Mock Interviews',price:2499},
   {id:'cc',name:'Career Counselling',price:2999},
 ];
